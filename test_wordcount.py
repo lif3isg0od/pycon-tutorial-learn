@@ -51,3 +51,9 @@ def test_consume_4():
     assert chars == 8                     # includes whitespace in char count
     assert words == 4
     assert lines == 1
+
+def test_daaaangerous():
+    try:
+        wordcount_lib.daaaangerous()
+    except ZeroDivisionError as e:
+        assert True, 'Should throw dividebyzero error'
